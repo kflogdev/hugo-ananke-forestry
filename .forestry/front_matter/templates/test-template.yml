@@ -1,4 +1,37 @@
 ---
 label: Test Template
 hide_body: true
-fields: []
+fields:
+- name: big_title
+  type: text
+  config:
+    required: false
+  label: Big Title
+- name: statistic
+  type: number
+  label: Statistic
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: sections
+  type: field_group_list
+  fields:
+  - name: section_title
+    type: text
+    config:
+      required: false
+    label: Section Title
+  - name: section_image
+    type: file
+    config:
+      maxSize: 64
+    label: Section Image
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Sections
